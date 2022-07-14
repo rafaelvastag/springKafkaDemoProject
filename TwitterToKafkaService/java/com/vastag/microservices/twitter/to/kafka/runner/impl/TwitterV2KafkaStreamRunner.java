@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
 
-import com.vastag.microservices.twitter.to.kafka.config.TwitterToKafkaServiceConfigData;
+import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
 import com.vastag.microservices.twitter.to.kafka.runner.StreamRunner;
 import com.vastag.microservices.twitter.to.kafka.runner.helpers.TwitterV2StreamHelper;
 

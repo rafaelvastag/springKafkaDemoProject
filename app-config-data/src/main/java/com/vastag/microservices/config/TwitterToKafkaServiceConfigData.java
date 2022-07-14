@@ -1,4 +1,4 @@
-package com.vastag.microservices.twitter.to.kafka.config;
+package com.vastag.microservices.config;
 
 import java.util.List;
 

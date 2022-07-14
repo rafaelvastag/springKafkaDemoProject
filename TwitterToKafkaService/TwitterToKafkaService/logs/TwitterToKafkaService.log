@@ -192,3 +192,16 @@ Consider marking one of the beans as @Primary, updating the consumer to accept m
 2022-07-14 12:11:39 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text elit consectetuer posuere consectetuer amet elit Spring Maecenas magna Maecenas porttitor
 2022-07-14 12:11:49 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text adipiscing magna sit sed Spring malesuada purus
 2022-07-14 12:11:57 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-07-14 18:04:47 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.9 on DESKTOP-NKE9617 with PID 26144 (C:\springboot\SpringKafkaDemoProject\TwitterToKafkaService\target\classes started by vastag in C:\springboot\SpringKafkaDemoProject\TwitterToKafkaService)
+2022-07-14 18:04:47 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-14 18:04:48 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.817 seconds (JVM running for 2.025)
+2022-07-14 18:04:48 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - App starts...
+2022-07-14 18:04:48 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-14 18:04:48 [main] INFO  c.v.m.t.t.k.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-14 18:04:48 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text porttitor Fusce magna Fusce Kafka pulvinar posuere consectetuer
+2022-07-14 18:04:58 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text posuere ultricies amet Lorem dolor porttitor Java ultricies purus Lorem libero
+2022-07-14 18:05:02 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-07-14 18:05:08 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text ultricies Fusce dolor Fusce consectetuer posuere Java sed ultricies massa posuere
+2022-07-14 18:07:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.vastag.microservices.twitter.to.kafka.TwitterToKafkaServiceApplicationTests], using SpringBootContextLoader
+2022-07-14 18:07:53 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.vastag.microservices.twitter.to.kafka.TwitterToKafkaServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-14 18:07:53 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.vastag.microservices.twitter.to.kafka.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
