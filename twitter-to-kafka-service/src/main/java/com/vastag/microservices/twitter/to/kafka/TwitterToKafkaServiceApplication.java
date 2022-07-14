@@ -1,7 +1,8 @@
 package com.vastag.microservices.twitter.to.kafka;
 
-import java.util.Arrays;
-
+import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
+import com.vastag.microservices.twitter.to.kafka.runner.StreamRunner;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -9,13 +10,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
-import com.vastag.microservices.twitter.to.kafka.runner.StreamRunner;
+import java.util.Arrays;
 
-import lombok.RequiredArgsConstructor;
-
-@ComponentScan(basePackages = "com.vastag.microservices")
 @RequiredArgsConstructor
+@ComponentScan(basePackages = "com.vastag.microservices")
 @SpringBootApplication
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 

@@ -1,0 +1,10 @@
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.9 on DESKTOP-NKE9617 with PID 29528 (C:\springKafkaDemoProject\twitter-to-kafka-service\target\classes started by vastag in C:\springKafkaDemoProject\twitter-to-kafka-service)
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.788 seconds (JVM running for 2.0)
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - App starts...
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-14 20:49:18 [main] INFO  c.v.m.t.t.k.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-14 20:49:18 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text massa Maecenas Maecenas posuere Microservices sit Fusce adipiscing
+2022-07-14 20:49:28 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text Maecenas pulvinar posuere pulvinar malesuada adipiscing ipsum elit Elasticsearch malesuada Lorem lectus malesuada posuere dolor
+2022-07-14 20:49:29 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-07-14 20:49:38 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text Maecenas purus massa elit magna ipsum lectus Elasticsearch porttitor Maecenas purus Lorem adipiscing posuere
