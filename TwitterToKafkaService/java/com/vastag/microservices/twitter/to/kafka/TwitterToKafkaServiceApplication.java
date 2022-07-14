@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,7 +23,6 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
 	private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
-	@Qualifier(value = "twitterKafkaStreamRunner")
 	private final StreamRunner streamRunner;
 
 	public static void main(String... args) {
