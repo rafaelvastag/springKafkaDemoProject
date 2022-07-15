@@ -1,0 +1,7 @@
+2022-07-15 11:29:33 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.9 on DESKTOP-NKE9617 with PID 19552 (C:\springKafkaDemoProject\twitter-to-kafka-service\target\classes started by vastag in C:\springKafkaDemoProject)
+2022-07-15 11:29:33 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-15 11:29:34 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.747 seconds (JVM running for 2.68)
+2022-07-15 11:29:34 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - App starts...
+2022-07-15 11:29:34 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-15 11:29:34 [main] INFO  c.v.m.t.t.k.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-15 11:29:34 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text elit sed purus ipsum ipsum malesuada malesuada lectus Spring sit sed porttitor lectus consectetuer magna
