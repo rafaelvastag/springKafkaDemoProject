@@ -44,6 +44,7 @@
         <dependency>
             <groupId>com.vastag.microservices.demo.service</groupId>
             <artifactId>app-config-data</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <build>

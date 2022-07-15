@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -31,7 +32,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
 
-import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
 import com.vastag.microservices.twitter.to.kafka.listener.TwitterKafkaStatusListener;
 
 import twitter4j.Status;
