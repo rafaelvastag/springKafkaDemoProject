@@ -3,8 +3,6 @@
 	<modules>
 		<module>twitter-to-kafka-service</module>
 		<module>app-config-data</module>
-		<module>kafka-environment</module>
-		<module>kafka-producer</module>
 		<module>kafka</module>
 		<module>kafka/kafka-producer</module>
 		<module>kafka/kafka-model</module>
@@ -31,6 +29,7 @@
 		<lombok.version>1.18.24</lombok.version>
 		<httpclient.version>4.5.13</httpclient.version>
 		<json.version>20140107</json.version>
+		<avro.version>1.11.0</avro.version>
 	</properties>
 
 
@@ -67,6 +66,11 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>${avro.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
