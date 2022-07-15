@@ -3,6 +3,12 @@
 	<modules>
 		<module>twitter-to-kafka-service</module>
 		<module>app-config-data</module>
+		<module>kafka-environment</module>
+		<module>kafka-producer</module>
+		<module>kafka</module>
+		<module>kafka/kafka-producer</module>
+		<module>kafka/kafka-model</module>
+		<module>kafka/kafka-admin</module>
 	</modules>
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
