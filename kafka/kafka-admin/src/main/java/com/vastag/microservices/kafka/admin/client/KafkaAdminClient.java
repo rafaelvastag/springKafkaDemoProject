@@ -1,23 +1,23 @@
 package com.vastag.microservices.kafka.admin.client;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.stream.Collectors;
-
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.CreateTopicsResult;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.admin.TopicListing;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.retry.RetryContext;
 import org.springframework.retry.support.RetryTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
 
 import com.vastag.microservices.config.KafkaConfigData;
 import com.vastag.microservices.config.RetryConfigData;
@@ -93,15 +93,19 @@ public class KafkaAdminClient {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
-	private HttpStatus getSchemaRegistryStatus() {
-		try {
-			return webClient.get().uri(kafkaConfigData.getSchemaRegistryUrl()).accept(MediaType.APPLICATION_JSON)
-					.exchange().map(ClientResponse::statusCode).block();
-		} catch (Exception e) {
-			return HttpStatus.SERVICE_UNAVAILABLE;
-		}
-	}
+
+    private HttpStatus getSchemaRegistryStatus() {
+        try {
+            return webClient
+                    .method(HttpMethod.GET)
+                    .uri(kafkaConfigData.getSchemaRegistryUrl())
+                    .exchange()
+                    .map(ClientResponse::statusCode)
+                    .block();
+        } catch (Exception e) {
+            return HttpStatus.SERVICE_UNAVAILABLE;
+        }
+    }
 
 	private Collection<TopicListing> getTopics() {
 		Collection<TopicListing> topics;

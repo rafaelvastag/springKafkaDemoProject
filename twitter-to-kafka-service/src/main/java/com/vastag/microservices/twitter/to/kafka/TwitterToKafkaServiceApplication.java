@@ -1,6 +1,7 @@
 package com.vastag.microservices.twitter.to.kafka;
 
 import com.vastag.microservices.config.TwitterToKafkaServiceConfigData;
+import com.vastag.microservices.twitter.to.kafka.initialization.StreamInitializer;
 import com.vastag.microservices.twitter.to.kafka.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,12 +18,12 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
 	private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 
-	private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
-
 	private final StreamRunner streamRunner;
+	
+    private final StreamInitializer streamInitializer;
 
-	public TwitterToKafkaServiceApplication(TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData, StreamRunner streamRunner) {
-		this.twitterToKafkaServiceConfigData = twitterToKafkaServiceConfigData;
+	public TwitterToKafkaServiceApplication(StreamInitializer streamInitializer, StreamRunner streamRunner) {
+		this.streamInitializer = streamInitializer;
 		this.streamRunner = streamRunner;
 	}
 
@@ -32,8 +33,7 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		LOG.info("App starts...");
-		LOG.info(Arrays.toString(twitterToKafkaServiceConfigData.getTwitterKeywords().toArray(new String[] {})));
+        streamInitializer.init();
 		streamRunner.start();
 	}
 }

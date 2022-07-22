@@ -1,0 +1,11 @@
+2022-07-15 13:41:37 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.9 on DESKTOP-NKE9617 with PID 1916 (C:\springKafkaDemoProject\twitter-to-kafka-service\target\classes started by vastag in C:\springKafkaDemoProject\twitter-to-kafka-service)
+2022-07-15 13:41:37 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-15 13:41:38 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.107 seconds (JVM running for 2.23)
+2022-07-15 13:41:38 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - App starts...
+2022-07-15 13:41:38 [main] INFO  c.v.m.t.t.k.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-15 13:41:38 [main] INFO  c.v.m.t.t.k.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2022-07-15 13:41:38 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text purus congue elit ipsum dolor ultricies Spring sed malesuada consectetuer congue Maecenas
+2022-07-15 13:41:48 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text ipsum sed consectetuer ipsum massa massa adipiscing purus Elasticsearch Maecenas magna posuere ipsum congue Maecenas massa
+2022-07-15 13:41:55 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-07-15 13:41:58 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text Lorem pulvinar malesuada lectus sit Java congue malesuada pulvinar
+2022-07-15 13:42:08 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Twitter status with text consectetuer lectus lectus porttitor malesuada ipsum porttitor libero Microservices Fusce Maecenas Fusce posuere Lorem dolor pulvinar

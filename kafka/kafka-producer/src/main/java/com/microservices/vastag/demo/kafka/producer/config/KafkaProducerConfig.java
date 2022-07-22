@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
@@ -14,20 +15,21 @@ import org.springframework.kafka.core.ProducerFactory;
 import com.vastag.microservices.config.KafkaConfigData;
 import com.vastag.microservices.config.KafkaProducerConfigData;
 
+@Configuration
 public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecordBase> {
 
-	private final KafkaConfigData kafkaConfigData;
-	private final KafkaProducerConfigData kafkaProducerConfigData;
+    private final KafkaConfigData kafkaConfigData;
 
-	public KafkaProducerConfig(KafkaConfigData kafkaConfigData, KafkaProducerConfigData kafkaProducerConfigData) {
-		super();
-		this.kafkaConfigData = kafkaConfigData;
-		this.kafkaProducerConfigData = kafkaProducerConfigData;
-	}
+    private final KafkaProducerConfigData kafkaProducerConfigData;
 
-	@Bean
-	public Map<String, Object> producerConfig() {
-		Map<String, Object> props = new HashMap<>();
+    public KafkaProducerConfig(KafkaConfigData configData, KafkaProducerConfigData producerConfigData) {
+        this.kafkaConfigData = configData;
+        this.kafkaProducerConfigData = producerConfigData;
+    }
+
+    @Bean
+    public Map<String, Object> producerConfig() {
+        Map<String, Object> props = new HashMap<>();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaConfigData.getBootstrapServers());
         props.put(kafkaConfigData.getSchemaRegistryUrlKey(), kafkaConfigData.getSchemaRegistryUrl());
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, kafkaProducerConfigData.getKeySerializerClass());
@@ -39,15 +41,16 @@ public class KafkaProducerConfig<K extends Serializable, V extends SpecificRecor
         props.put(ProducerConfig.ACKS_CONFIG, kafkaProducerConfigData.getAcks());
         props.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, kafkaProducerConfigData.getRequestTimeoutMs());
         props.put(ProducerConfig.RETRIES_CONFIG, kafkaProducerConfigData.getRetryCount());
-		return props;
-	}
-	
-	@Bean
-	public ProducerFactory<K, V> producerFactory() {
-		return new DefaultKafkaProducerFactory<>(producerConfig());
-	}
-	
-	public KafkaTemplate<K, V> kafkaTemplate() {
-		return new KafkaTemplate<>(producerFactory());
-	}
+        return props;
+    }
+
+    @Bean
+    public ProducerFactory<K, V> producerFactory() {
+        return new DefaultKafkaProducerFactory<>(producerConfig());
+    }
+
+    @Bean
+    public KafkaTemplate<K, V> kafkaTemplate() {
+        return new KafkaTemplate<>(producerFactory());
+    }
 }
