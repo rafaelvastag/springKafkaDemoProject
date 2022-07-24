@@ -1,4 +1,4 @@
-package com.microservices.vastag.demo.kafka.producer.service.impl;
+package com.vastag.microservices.demo.kafka.producer.service.impl;
 
 import javax.annotation.PreDestroy;
 
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel;
-import com.microservices.vastag.demo.kafka.producer.service.KafkaProducer;
+import com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel;
+import com.vastag.microservices.demo.kafka.producer.service.KafkaProducer;
 
 import lombok.extern.slf4j.Slf4j;
 

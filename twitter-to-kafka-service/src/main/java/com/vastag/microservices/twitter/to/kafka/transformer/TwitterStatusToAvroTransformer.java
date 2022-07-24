@@ -2,7 +2,7 @@ package com.vastag.microservices.twitter.to.kafka.transformer;
 
 import org.springframework.stereotype.Component;
 
-import com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel;
+import com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel;
 
 import twitter4j.Status;
 

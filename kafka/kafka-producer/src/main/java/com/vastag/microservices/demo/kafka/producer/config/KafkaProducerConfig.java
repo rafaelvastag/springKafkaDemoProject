@@ -1,4 +1,4 @@
-package com.microservices.vastag.demo.kafka.producer.config;
+package com.vastag.microservices.demo.kafka.producer.config;
 
 import java.io.Serializable;
 import java.util.HashMap;

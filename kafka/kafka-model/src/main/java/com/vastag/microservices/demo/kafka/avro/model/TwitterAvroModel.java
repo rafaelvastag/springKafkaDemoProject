@@ -3,14 +3,12 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.microservices.vastag.demo.kafka.avro.model;
+package com.vastag.microservices.demo.kafka.avro.model;
 
-import org.apache.avro.generic.GenericArray;
-import org.apache.avro.specific.SpecificData;
-import org.apache.avro.util.Utf8;
-import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
+import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.SchemaStore;
+import org.apache.avro.specific.SpecificData;
 
 @org.apache.avro.specific.AvroGenerated
 public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -196,8 +194,8 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
    * Creates a new TwitterAvroModel RecordBuilder.
    * @return A new TwitterAvroModel RecordBuilder
    */
-  public static com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder() {
-    return new com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder();
+  public static com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder() {
+    return new com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder();
   }
 
   /**
@@ -205,11 +203,11 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing builder to copy.
    * @return A new TwitterAvroModel RecordBuilder
    */
-  public static com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder(com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder other) {
+  public static com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder(com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder other) {
     if (other == null) {
-      return new com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder();
+      return new com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder();
     } else {
-      return new com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder(other);
+      return new com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder(other);
     }
   }
 
@@ -218,11 +216,11 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing instance to copy.
    * @return A new TwitterAvroModel RecordBuilder
    */
-  public static com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder(com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel other) {
+  public static com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder newBuilder(com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel other) {
     if (other == null) {
-      return new com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder();
+      return new com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder();
     } else {
-      return new com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder(other);
+      return new com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder(other);
     }
   }
 
@@ -247,7 +245,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder other) {
+    private Builder(com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.userId)) {
         this.userId = data().deepCopy(fields()[0].schema(), other.userId);
@@ -271,7 +269,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing TwitterAvroModel instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel other) {
+    private Builder(com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel other) {
       super(SCHEMA$);
       if (isValidValue(fields()[0], other.userId)) {
         this.userId = data().deepCopy(fields()[0].schema(), other.userId);
@@ -305,7 +303,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'userId'.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder setUserId(long value) {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder setUserId(long value) {
       validate(fields()[0], value);
       this.userId = value;
       fieldSetFlags()[0] = true;
@@ -325,7 +323,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'userId' field.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder clearUserId() {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder clearUserId() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -344,7 +342,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder setId(long value) {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder setId(long value) {
       validate(fields()[1], value);
       this.id = value;
       fieldSetFlags()[1] = true;
@@ -364,7 +362,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder clearId() {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder clearId() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -383,7 +381,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'text'.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder setText(java.lang.String value) {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder setText(java.lang.String value) {
       validate(fields()[2], value);
       this.text = value;
       fieldSetFlags()[2] = true;
@@ -403,7 +401,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'text' field.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder clearText() {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder clearText() {
       text = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -423,7 +421,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'createdAt'.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder setCreatedAt(java.lang.Long value) {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder setCreatedAt(java.lang.Long value) {
       validate(fields()[3], value);
       this.createdAt = value;
       fieldSetFlags()[3] = true;
@@ -443,7 +441,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'createdAt' field.
       * @return This builder.
       */
-    public com.microservices.vastag.demo.kafka.avro.model.TwitterAvroModel.Builder clearCreatedAt() {
+    public com.vastag.microservices.demo.kafka.avro.model.TwitterAvroModel.Builder clearCreatedAt() {
       createdAt = null;
       fieldSetFlags()[3] = false;
       return this;
