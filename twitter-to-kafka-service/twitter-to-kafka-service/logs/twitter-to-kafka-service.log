@@ -243,3 +243,5 @@
 2022-07-24 15:40:01 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
 2022-07-24 15:40:01 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1658688001385
 2022-07-24 15:40:01 [kafka-producer-network-thread | producer-2] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-2] Cluster ID: erpS1WlKTYS1VO1rn40jzQ
+2022-07-24 15:40:11 [pool-1-thread-1] INFO  c.v.m.t.t.k.l.TwitterKafkaStatusListener - Received status text elit Lorem Lorem ultricies malesuada Maecenas sit ipsum Spring ipsum porttitor sed sed porttitor porttitor adipiscing sending to kafka topic twitter-topic
+2022-07-24 15:40:11 [pool-1-thread-1] INFO  c.v.m.d.k.p.s.i.TwitterKafkaProducer - Sending message = '{"userId": 996884931231229551, "id": 7685528753452702014, "text": "elit Lorem Lorem ultricies malesuada Maecenas sit ipsum Spring ipsum porttitor sed sed porttitor porttitor adipiscing", "createdAt": 1658688011000}' to topic = 'twitter-topic'
